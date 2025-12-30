@@ -17,4 +17,12 @@ class TextStyles {
     fontFamily: 'PPMori',
     fontWeight: FontWeight.w600,
   );
+
+  /// Used for Bottom Navigation Bar text
+  static const TextStyle bottomNavText = TextStyle(
+    color: AppColors.primaryOrange,
+    fontSize: 14,
+    fontFamily: 'PPMori',
+    fontWeight: FontWeight.w600,
+  );
 }

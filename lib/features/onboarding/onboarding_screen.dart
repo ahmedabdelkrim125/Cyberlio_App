@@ -36,7 +36,7 @@ class OnboardingScreen extends StatelessWidget {
                 ),
                 TextButton(
                   onPressed: () {
-                    context.pushNamed(Routes.homeScreen);
+                    context.pushNamed(Routes.bottomNavScreen);
                   },
                   style: TextButton.styleFrom(
                     padding: EdgeInsets.zero,
