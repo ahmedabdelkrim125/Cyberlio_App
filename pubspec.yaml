@@ -23,3 +23,9 @@ flutter:
 
   assets:
     - assets/images/
+
+  fonts:
+    - family: PPMori
+      fonts:
+        - asset: assets/fonts/PPMori-SemiBold.otf
+          weight: 600
