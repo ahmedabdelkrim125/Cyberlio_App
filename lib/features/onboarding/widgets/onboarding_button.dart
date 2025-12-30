@@ -1,15 +1,13 @@
 import 'package:e_commerce_app/core/helper/responsive_extensions.dart';
+import 'package:e_commerce_app/core/theme/app_colors.dart';
+import 'package:e_commerce_app/core/theme/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingButton extends StatelessWidget {
   final String title;
   final VoidCallback? onPressed;
 
-  const OnboardingButton({
-    super.key,
-    required this.title,
-    this.onPressed,
-  });
+  const OnboardingButton({super.key, required this.title, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -24,19 +22,10 @@ class OnboardingButton extends StatelessWidget {
             vertical: 15.h(context),
           ),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: AppColors.white,
             borderRadius: BorderRadius.circular(65.r(context)),
           ),
-          child: Center(
-            child: Text(
-              title,
-              style: const TextStyle(
-                color: Color(0xFFFF5500),
-                fontSize: 14,
-                fontWeight: FontWeight.w600,
-              ),
-            ),
-          ),
+          child: Center(child: Text(title, style: TextStyles.onboardingButton)),
         ),
       ),
     );

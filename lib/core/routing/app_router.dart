@@ -6,24 +6,16 @@ import 'package:flutter/material.dart';
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-
       case Routes.onBoardingScreen:
-        return MaterialPageRoute(
-          builder: (_) => const OnboardingScreen(),
-        );
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
 
       case Routes.homeScreen:
-        return MaterialPageRoute(
-          builder: (_) => const HomeScreen(),
-        );
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
 
       default:
         return MaterialPageRoute(
-          builder: (_) => const Scaffold(
-            body: Center(
-              child: Text('No Route Found'),
-            ),
-          ),
+          builder: (_) =>
+              const Scaffold(body: Center(child: Text('No Route Found'))),
         );
     }
   }
