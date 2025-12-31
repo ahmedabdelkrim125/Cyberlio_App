@@ -6,6 +6,8 @@ import '../../features/home/ui/home_screen.dart';
 import '../../features/onboarding/onboarding_screen.dart';
 import '../../features/profile/ui/profile_screen.dart';
 import '../../features/favorites/ui/favorites_screen.dart';
+import '../../features/auth/login/ui/login_screen.dart';
+import '../../features/auth/signup/ui/signup_screen.dart';
 
 class AppRouter {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -22,6 +24,12 @@ class AppRouter {
 
       case Routes.bottomNavScreen:
         return MaterialPageRoute(builder: (_) => const BottomNavScreen());
+
+      case Routes.loginScreen:
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
+
+      case Routes.signupScreen:
+        return MaterialPageRoute(builder: (_) => const SignupScreen());
 
       default:
         return MaterialPageRoute(

@@ -31,7 +31,7 @@ class OnboardingScreen extends StatelessWidget {
                 OnboardingButton(
                   title: 'LOG IN',
                   onPressed: () {
-                    // Navigator.pushNamed(context, Routes.loginScreen);
+                    context.pushNamed(Routes.loginScreen);
                   },
                 ),
                 TextButton(
