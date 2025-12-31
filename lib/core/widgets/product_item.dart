@@ -21,11 +21,11 @@ class ProductItem extends StatelessWidget {
       margin: EdgeInsets.only(right: 12.w(context)),
       padding: context.responsivePadding(all: 12),
       decoration: BoxDecoration(
-        color: Colors.white, // تغيير الخلفية للأبيض
+        color: Colors.white, 
         borderRadius: BorderRadius.circular(20.r(context)),
         border: Border.all(
           color: Colors.grey.shade100,
-        ), // إطار خفيف جداً بدل الجراي
+        ), 
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,7 +49,7 @@ class ProductItem extends StatelessWidget {
               vertical: 2.h(context),
             ),
             decoration: BoxDecoration(
-              color: Colors.grey[100], // خلفية الـ Label بقت جراي فاتح
+              color: Colors.grey[100], 
               borderRadius: BorderRadius.circular(4.r(context)),
             ),
             child: const Text(
