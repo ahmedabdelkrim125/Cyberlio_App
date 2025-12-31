@@ -4,4 +4,6 @@ class Routes {
   static const String wishlistScreen = '/wishlistScreen';
   static const String profileScreen = '/profileScreen';
   static const String bottomNavScreen = '/bottomNavScreen';
+  static const String loginScreen = '/loginScreen';
+  static const String signupScreen = '/signupScreen';
 }

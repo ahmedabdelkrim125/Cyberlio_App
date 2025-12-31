@@ -1,9 +1,9 @@
-import 'package:e_commerce_app/core/widgets/home_app_bar.dart';
-import 'package:e_commerce_app/core/widgets/home_categories_list.dart';
-import 'package:e_commerce_app/core/widgets/product_item.dart';
-import 'package:e_commerce_app/core/widgets/promo_banner.dart';
-import 'package:e_commerce_app/core/widgets/recently_viewed_section.dart';
-import 'package:e_commerce_app/core/widgets/section_header.dart';
+import 'package:e_commerce_app/features/home/ui/widgets/home_app_bar.dart';
+import 'widgets/home_categories_list.dart';
+import 'widgets/product_item.dart';
+import 'widgets/promo_banner.dart';
+import 'widgets/recently_viewed_section.dart';
+import 'widgets/section_header.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_images.dart';
 import '../../../../core/helper/responsive_extensions.dart';
@@ -15,7 +15,6 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -24,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               const HomeAppBar(),
               const PromoBanner(),
               const HomeCategoriesList(),
-              
+
               const SectionHeader(title: 'Hot sales'),
               SizedBox(
                 height: 220.h(context),
@@ -32,16 +31,31 @@ class HomeScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   padding: EdgeInsets.symmetric(horizontal: 16.w(context)),
                   children: [
-                    ProductItem(image: Assets.laptop, name: 'Macbook Air M1', price: '29,999'),
-                    ProductItem(image: Assets.headphone, name: 'Sony WH/1000XM5', price: '4,999'),
-                    ProductItem(image: Assets.airpods, name: 'FreeBuds Huawei', price: '1,999'),
+                    ProductItem(
+                      image: Assets.laptop,
+                      name: 'Macbook Air M1',
+                      price: '29,999',
+                      onTap: () {},
+                    ),
+                    ProductItem(
+                      image: Assets.headphone,
+                      name: 'Sony WH/1000XM5',
+                      price: '4,999',
+                      onTap: () {},
+                    ),
+                    ProductItem(
+                      image: Assets.airpods,
+                      name: 'FreeBuds Huawei',
+                      price: '1,999',
+                      onTap: () {},
+                    ),
                   ],
                 ),
               ),
 
               const SectionHeader(title: 'Recently viewed'),
               const RecentlyViewedSection(),
-              
+
               verticalSpace(context, height: 20),
             ],
           ),
