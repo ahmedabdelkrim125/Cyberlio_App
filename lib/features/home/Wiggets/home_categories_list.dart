@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../core/helper/responsive_extensions.dart';
+import '../../../../../core/helper/responsive_extensions.dart';
 
 class HomeCategoriesList extends StatelessWidget {
   const HomeCategoriesList({super.key});

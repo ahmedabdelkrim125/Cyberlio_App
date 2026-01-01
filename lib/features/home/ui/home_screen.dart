@@ -1,8 +1,8 @@
-import 'package:e_commerce_app/core/widgets/home_app_bar.dart';
-import 'package:e_commerce_app/core/widgets/home_categories_list.dart';
-import 'package:e_commerce_app/core/widgets/product_item.dart';
-import 'package:e_commerce_app/core/widgets/promo_banner.dart';
-import 'package:e_commerce_app/core/widgets/recently_viewed_section.dart';
+import 'package:e_commerce_app/features/home/Wiggets/home_app_bar.dart';
+import 'package:e_commerce_app/features/home/Wiggets/home_categories_list.dart';
+import 'package:e_commerce_app/features/home/Wiggets/product_item.dart';
+import 'package:e_commerce_app/features/home/Wiggets/promo_banner.dart';
+import 'package:e_commerce_app/features/home/Wiggets/recently_viewed_section.dart';
 import 'package:e_commerce_app/core/widgets/section_header.dart';
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_images.dart';
@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
               const HomeAppBar(),
               const PromoBanner(),
               const HomeCategoriesList(),
-              
+
               const SectionHeader(title: 'Hot sales'),
               SizedBox(
                 height: 220.h(context),
@@ -32,16 +32,28 @@ class HomeScreen extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   padding: EdgeInsets.symmetric(horizontal: 16.w(context)),
                   children: [
-                    ProductItem(image: Assets.laptop, name: 'Macbook Air M1', price: '29,999'),
-                    ProductItem(image: Assets.headphone, name: 'Sony WH/1000XM5', price: '4,999'),
-                    ProductItem(image: Assets.airpods, name: 'FreeBuds Huawei', price: '1,999'),
+                    ProductItem(
+                      image: Assets.laptop,
+                      name: 'Macbook Air M1',
+                      price: '29,999',
+                    ),
+                    ProductItem(
+                      image: Assets.headphone,
+                      name: 'Sony WH/1000XM5',
+                      price: '4,999',
+                    ),
+                    ProductItem(
+                      image: Assets.airpods,
+                      name: 'FreeBuds Huawei',
+                      price: '1,999',
+                    ),
                   ],
                 ),
               ),
 
               const SectionHeader(title: 'Recently viewed'),
               const RecentlyViewedSection(),
-              
+
               verticalSpace(context, height: 20),
             ],
           ),

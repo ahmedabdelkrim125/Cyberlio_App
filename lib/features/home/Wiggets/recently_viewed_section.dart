@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import '../../../../core/constants/app_images.dart';
-import '../../../../core/helper/responsive_extensions.dart';
-import '../../../../core/helper/spacing.dart';
+import '../../../../../core/constants/app_images.dart';
+import '../../../../../core/helper/responsive_extensions.dart';
+import '../../../../../core/helper/spacing.dart';
 
 class RecentlyViewedSection extends StatelessWidget {
   const RecentlyViewedSection({super.key});

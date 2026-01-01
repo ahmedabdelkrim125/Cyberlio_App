@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/helper/responsive_extensions.dart';
-import '../../../../core/helper/spacing.dart';
+import '../../../../../core/helper/responsive_extensions.dart';
+import '../../../../../core/helper/spacing.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});

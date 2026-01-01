@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../../core/helper/responsive_extensions.dart';
-import '../../../../core/helper/spacing.dart';
+import '../../../../../core/helper/responsive_extensions.dart';
+import '../../../../../core/helper/spacing.dart';
 
 class ProductItem extends StatelessWidget {
   final String image;
@@ -21,11 +21,9 @@ class ProductItem extends StatelessWidget {
       margin: EdgeInsets.only(right: 12.w(context)),
       padding: context.responsivePadding(all: 12),
       decoration: BoxDecoration(
-        color: Colors.white, 
+        color: Colors.white,
         borderRadius: BorderRadius.circular(20.r(context)),
-        border: Border.all(
-          color: Colors.grey.shade100,
-        ), 
+        border: Border.all(color: Colors.grey.shade100),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -49,7 +47,7 @@ class ProductItem extends StatelessWidget {
               vertical: 2.h(context),
             ),
             decoration: BoxDecoration(
-              color: Colors.grey[100], 
+              color: Colors.grey[100],
               borderRadius: BorderRadius.circular(4.r(context)),
             ),
             child: const Text(
