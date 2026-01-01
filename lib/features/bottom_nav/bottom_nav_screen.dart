@@ -76,7 +76,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
                 ),
                 _buildTab(
                   context: context,
-                  iconPath: Assets.wishlistIcon,
+                  iconPath: Assets.favoriteIcon,
                   text: 'Favorites',
                   isActive: _currentIndex == 2,
                 ),

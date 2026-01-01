@@ -1,9 +1,9 @@
-import 'package:e_commerce_app/core/routing/routes.dart';
 import 'package:flutter/material.dart';
-
+import 'routes.dart';
 import '../../features/bottom_nav/bottom_nav_screen.dart';
 import '../../features/home/ui/home_screen.dart';
 import '../../features/onboarding/onboarding_screen.dart';
+import '../../features/product/ui/product_screen.dart';
 import '../../features/profile/ui/profile_screen.dart';
 import '../../features/favorites/ui/favorites_screen.dart';
 import '../../features/auth/login/ui/login_screen.dart';
@@ -30,6 +30,9 @@ class AppRouter {
 
       case Routes.signupScreen:
         return MaterialPageRoute(builder: (_) => const SignupScreen());
+
+         case Routes.productScreen:
+        return MaterialPageRoute(builder: (_) => const ProductScreen());
 
       default:
         return MaterialPageRoute(
