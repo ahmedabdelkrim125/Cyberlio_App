@@ -13,4 +13,8 @@ class Assets {
   static const String headphone = 'assets/images/headphone.png';
   static const String airpods = 'assets/images/airpods.png';
   static const String speaker = 'assets/images/speaker.png';
+  static const String bigheadphone = 'assets/images/big headphone.png';
+  static const String head1 = 'assets/images/head1.png';
+  static const String head2 = 'assets/images/head2.png';
+  static const String head3 = 'assets/images/head3.png';
 }
