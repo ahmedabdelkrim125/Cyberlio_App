@@ -6,7 +6,7 @@ class TextStyles {
   static const TextStyle onboardingButton = TextStyle(
     color: AppColors.primaryOrange,
     fontSize: 14,
-    fontFamily: 'PPMori',
+    fontFamily: 'PP Mori',
     fontWeight: FontWeight.w600,
   );
 
@@ -14,7 +14,7 @@ class TextStyles {
   static const TextStyle skipButton = TextStyle(
     color: Colors.white,
     fontSize: 14,
-    fontFamily: 'PPMori',
+    fontFamily: 'PP Mori',
     fontWeight: FontWeight.w600,
   );
 
@@ -22,7 +22,47 @@ class TextStyles {
   static const TextStyle bottomNavText = TextStyle(
     color: AppColors.primaryOrange,
     fontSize: 14,
-    fontFamily: 'PPMori',
+    fontFamily: 'PP Mori',
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Product Title
+  static const TextStyle productTitle = TextStyle(
+    color: AppColors.textNeutralDefault,
+    fontSize: 24,
+    fontFamily: 'PP Mori',
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Product Price
+  static const TextStyle productPrice = TextStyle(
+    color: AppColors.primaryOrange,
+    fontSize: 20,
+    fontFamily: 'PP Mori',
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Product Secondary Text (taxes, duties, etc.)
+  static const TextStyle productSecondaryText = TextStyle(
+    color: AppColors.textSecondary,
+    fontSize: 20,
+    fontFamily: 'PP Mori',
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Divider Text
+  static const TextStyle dividerText = TextStyle(
+    color: AppColors.textSecondary,
+    fontSize: 20,
+    fontFamily: 'PP Mori',
+    fontWeight: FontWeight.w600,
+  );
+
+  /// Button Text (Add to cart, Buy Now, etc.)
+  static const TextStyle buttonText = TextStyle(
+    color: Colors.white,
+    fontSize: 18,
+    fontFamily: 'PP Mori',
     fontWeight: FontWeight.w600,
   );
 }

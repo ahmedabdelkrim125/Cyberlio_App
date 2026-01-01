@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/features/home/ui/widgets/home_app_bar.dart';
+import '../../../core/routing/routes.dart';
 import 'widgets/home_categories_list.dart';
 import 'widgets/product_item.dart';
 import 'widgets/promo_banner.dart';
@@ -41,7 +42,8 @@ class HomeScreen extends StatelessWidget {
                       image: Assets.headphone,
                       name: 'Sony WH/1000XM5',
                       price: '4,999',
-                      onTap: () {},
+                      onTap: () =>
+                          Navigator.pushNamed(context, Routes.productScreen),
                     ),
                     ProductItem(
                       image: Assets.airpods,

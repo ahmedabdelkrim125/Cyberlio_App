@@ -44,7 +44,7 @@ class RecentlyViewedSection extends StatelessWidget {
                 radius: 14.r(context),
                 backgroundColor: Colors.white,
                 child: SvgPicture.asset(
-                  Assets.wishlistIcon, // استخدام الـ SVG المعرف عندك
+                  Assets.favoriteIcon, // استخدام الـ SVG المعرف عندك
                   width: 16.w(context),
                   height: 16.h(context),
                   colorFilter: const ColorFilter.mode(
