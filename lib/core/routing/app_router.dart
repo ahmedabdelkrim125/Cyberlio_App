@@ -1,11 +1,14 @@
-import 'package:e_commerce_app/core/routing/routes.dart';
 import 'package:flutter/material.dart';
+import 'routes.dart';
 
 import '../../features/bottom_nav/bottom_nav_screen.dart';
 import '../../features/home/ui/home_screen.dart';
 import '../../features/onboarding/onboarding_screen.dart';
+import '../../features/product/ui/product_screen.dart';
 import '../../features/profile/ui/profile_screen.dart';
 import '../../features/favorites/ui/favorites_screen.dart';
+import '../../features/auth/login/ui/login_screen.dart';
+import '../../features/auth/signup/ui/signup_screen.dart';
 import '../../features/checkout screen/ui/checkout_screen.dart';
 
 class AppRouter {
@@ -16,13 +19,24 @@ class AppRouter {
 
       case Routes.homeScreen:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
+
       case Routes.wishlistScreen:
         return MaterialPageRoute(builder: (_) => const FavoritesScreen());
+
       case Routes.profileScreen:
         return MaterialPageRoute(builder: (_) => const ProfileScreen());
 
       case Routes.bottomNavScreen:
         return MaterialPageRoute(builder: (_) => const BottomNavScreen());
+
+      case Routes.loginScreen:
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
+
+      case Routes.signupScreen:
+        return MaterialPageRoute(builder: (_) => const SignupScreen());
+
+      case Routes.productScreen:
+        return MaterialPageRoute(builder: (_) => const ProductScreen());
 
       case Routes.checkoutScreen:
         return MaterialPageRoute(builder: (_) => const CheckoutScreen());
