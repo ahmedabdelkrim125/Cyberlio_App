@@ -3,7 +3,14 @@ import 'package:flutter/material.dart';
 class AppColors {
   /// Brand
   static const Color primaryOrange = Color(0xFFFF5500);
-
+    static const List<Color> orangeGradient = [
+    Color(0xFFFF8FB1), // Pinkish start
+    Color(0xFFFF5500), // Orange end
+  ];
+  static const List<Color> purpleGradient = [
+    Color(0xFF7B2FF7),
+    Color(0xFF3B108B),
+  ];
   /// Neutrals
   static const Color white = Colors.white;
   static const Color iconGrey = Color(0xFF767676);
