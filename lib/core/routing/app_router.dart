@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../features/checkout screen/ui/checkout_screen.dart';
 import 'routes.dart';
 import '../../features/bottom_nav/bottom_nav_screen.dart';
 import '../../features/home/ui/home_screen.dart';
@@ -33,6 +34,9 @@ class AppRouter {
 
          case Routes.productScreen:
         return MaterialPageRoute(builder: (_) => const ProductScreen());
+
+        case Routes.checkoutScreen:
+        return MaterialPageRoute(builder: (_) => const CheckoutScreen());
 
       default:
         return MaterialPageRoute(

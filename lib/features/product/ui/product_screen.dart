@@ -1,6 +1,8 @@
 import 'package:e_commerce_app/core/constants/app_images.dart';
 import 'package:e_commerce_app/core/helper/responsive_extensions.dart';
 import 'package:e_commerce_app/core/helper/spacing.dart';
+import '../../../core/helper/extensions.dart';
+import '../../../core/routing/routes.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/text_styles.dart';
 import 'Widgets/product_details_appbar.dart';
@@ -274,7 +276,7 @@ class _ProductScreenState extends State<ProductScreen> {
           CustomButton.buyNow(
             text: 'Buy Now',
             onPressed: () {
-              // Buy now logic
+              context.pushNamed(Routes.checkoutScreen);
             },
           ),
         ],
