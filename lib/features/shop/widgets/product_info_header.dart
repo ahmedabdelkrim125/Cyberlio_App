@@ -33,7 +33,7 @@ class ProductInfoHeader extends StatelessWidget {
             horizontalSpace(context, width: 8),
             Text(
               '| Including taxes and duties',
-              style: TextStyle(fontSize: 12.r(context), color: Colors.grey),
+              style: TextStyle(fontSize: 12.r(context), color: AppColors.greyText),
             ),
           ],
         ),
@@ -44,15 +44,15 @@ class ProductInfoHeader extends StatelessWidget {
             // Colors dots
             Row(
               children: [
-                _buildColorDot(Colors.black, true),
-                _buildColorDot(const Color(0xFFD2B48C), false),
-                _buildColorDot(Colors.grey.shade300, false),
+                _buildColorDot(AppColors.black, true),
+                _buildColorDot(AppColors.swatchTan, false),
+                _buildColorDot(AppColors.greyBorderStrong, false),
               ],
             ),
             // Rating
             Row(
               children: [
-                const Icon(Icons.star, color: Colors.amber, size: 20),
+                const Icon(Icons.star, color: AppColors.amber, size: 20),
                 Text(
                   ' 4.8',
                   style: TextStyle(
@@ -62,7 +62,7 @@ class ProductInfoHeader extends StatelessWidget {
                 ),
                 Text(
                   ' (231)',
-                  style: TextStyle(color: Colors.grey, fontSize: 12.r(context)),
+                  style: TextStyle(color: AppColors.greyText, fontSize: 12.r(context)),
                 ),
               ],
             ),
@@ -78,7 +78,7 @@ class ProductInfoHeader extends StatelessWidget {
       padding: const EdgeInsets.all(2),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        border: isSelected ? Border.all(color: Colors.black, width: 1) : null,
+        border: isSelected ? Border.all(color: AppColors.black, width: 1) : null,
       ),
       child: CircleAvatar(radius: 10, backgroundColor: color),
     );

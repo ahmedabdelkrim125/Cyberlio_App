@@ -36,7 +36,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
           color: AppColors.white,
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: AppColors.black.withOpacity(0.05),
               blurRadius: 10.r(context),
               offset: Offset(0, -2.h(context)),
             ),
@@ -53,7 +53,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
                 });
               },
               gap: 8.w(context),
-              color: Colors.grey[600],
+              color: AppColors.greyIcon,
               activeColor: AppColors.primaryOrange,
               tabBackgroundColor: AppColors.primaryOrange.withOpacity(0.1),
               padding: EdgeInsets.symmetric(
@@ -112,7 +112,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         width: 22.w(context),
         height: 22.h(context),
         colorFilter: ColorFilter.mode(
-          isActive ? AppColors.primaryOrange : Colors.grey[600]!,
+          isActive ? AppColors.primaryOrange : AppColors.greyIcon,
           BlendMode.srcIn,
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/helper/responsive_extensions.dart';
+import '../../../../../core/theme/app_colors.dart';
 
 class HomeCategoriesList extends StatelessWidget {
   const HomeCategoriesList({super.key});
@@ -24,9 +25,9 @@ class HomeCategoriesList extends StatelessWidget {
             margin: EdgeInsets.only(right: 10.w(context)),
             padding: EdgeInsets.symmetric(horizontal: 20.w(context)),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: AppColors.white,
               borderRadius: BorderRadius.circular(25.r(context)),
-              border: Border.all(color: Colors.grey.shade300),
+              border: Border.all(color: AppColors.greyBorderStrong),
             ),
             child: Center(
               child: Text(
@@ -34,7 +35,7 @@ class HomeCategoriesList extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14.r(context),
                   fontWeight: FontWeight.w500,
-                  color: Colors.black,
+                  color: AppColors.black,
                 ),
               ),
             ),

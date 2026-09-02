@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../../core/constants/app_images.dart';
 import '../../../../../core/helper/responsive_extensions.dart';
 import '../../../../../core/helper/spacing.dart';
+import '../../../../../core/theme/app_colors.dart';
 
 class RecentlyViewedSection extends StatelessWidget {
   const RecentlyViewedSection({super.key});
@@ -13,9 +14,9 @@ class RecentlyViewedSection extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16.w(context)),
       child: Row(
         children: [
-          _buildViewedCard(context, Assets.laptop1, const Color(0xFFFFEBEB)),
+          _buildViewedCard(context, Assets.laptop1, AppColors.pinkBack),
           horizontalSpace(context, width: 12),
-          _buildViewedCard(context, Assets.speaker, const Color(0xFFFEF9EB)),
+          _buildViewedCard(context, Assets.speaker, AppColors.yellowBack),
         ],
       ),
     );
@@ -42,13 +43,13 @@ class RecentlyViewedSection extends StatelessWidget {
               right: 8,
               child: CircleAvatar(
                 radius: 14.r(context),
-                backgroundColor: Colors.white,
+                backgroundColor: AppColors.white,
                 child: SvgPicture.asset(
                   Assets.wishlistIcon, // استخدام الـ SVG المعرف عندك
                   width: 16.w(context),
                   height: 16.h(context),
                   colorFilter: const ColorFilter.mode(
-                    Colors.orange,
+                    AppColors.primaryOrange,
                     BlendMode.srcIn,
                   ),
                 ),

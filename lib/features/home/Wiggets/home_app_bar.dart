@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../../core/helper/responsive_extensions.dart';
 import '../../../../../core/helper/spacing.dart';
+import '../../../../../core/theme/app_colors.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({super.key});
@@ -15,14 +16,14 @@ class HomeAppBar extends StatelessWidget {
             child: Container(
               height: 50.h(context),
               decoration: BoxDecoration(
-                color: Colors.grey[100],
+                color: AppColors.greyLight,
                 borderRadius: BorderRadius.circular(25.r(context)),
               ),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: 'Search products',
-                  hintStyle: const TextStyle(color: Colors.grey, fontSize: 14),
-                  prefixIcon: const Icon(Icons.search, color: Colors.grey),
+                  hintStyle: const TextStyle(color: AppColors.greyText, fontSize: 14),
+                  prefixIcon: const Icon(Icons.search, color: AppColors.greyText),
                   border: InputBorder.none,
                   contentPadding: EdgeInsets.symmetric(vertical: 12.h(context)),
                 ),
@@ -33,10 +34,10 @@ class HomeAppBar extends StatelessWidget {
           Stack(
             children: [
               CircleAvatar(
-                backgroundColor: Colors.grey[100],
+                backgroundColor: AppColors.greyLight,
                 child: const Icon(
                   Icons.notifications_none,
-                  color: Colors.black,
+                  color: AppColors.black,
                 ),
               ),
               Positioned(
@@ -44,7 +45,7 @@ class HomeAppBar extends StatelessWidget {
                 top: 2,
                 child: CircleAvatar(
                   radius: 5.r(context),
-                  backgroundColor: Colors.orange,
+                  backgroundColor: AppColors.primaryOrange,
                 ),
               ),
             ],

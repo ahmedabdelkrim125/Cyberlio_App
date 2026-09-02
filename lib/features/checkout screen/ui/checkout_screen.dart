@@ -7,6 +7,7 @@ import 'package:e_commerce_app/features/checkout%20screen/widgets/quick_pay_opti
 import 'package:flutter/material.dart';
 import '../../../../core/helper/responsive_extensions.dart';
 import '../../../../core/helper/spacing.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class CheckoutScreen extends StatelessWidget {
   const CheckoutScreen({super.key});
@@ -14,7 +15,7 @@ class CheckoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: _buildAppBar(context),
       body: SingleChildScrollView(
         padding: context.responsivePadding(horizontal: 20),
@@ -52,17 +53,17 @@ class CheckoutScreen extends StatelessWidget {
 
   AppBar _buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       elevation: 0,
       leading: IconButton(
-        icon: const Icon(Icons.arrow_back_ios, color: Colors.black, size: 20),
+        icon: const Icon(Icons.arrow_back_ios, color: AppColors.black, size: 20),
         onPressed: () => Navigator.pop(context),
       ),
       titleSpacing: 0,
       title: Text(
         'Checkout',
         style: TextStyle(
-          color: Colors.black,
+          color: AppColors.black,
           fontSize: 20.r(context),
           fontWeight: FontWeight.bold,
           fontFamily: 'PPMori',

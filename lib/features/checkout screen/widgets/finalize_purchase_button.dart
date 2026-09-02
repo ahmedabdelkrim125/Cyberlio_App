@@ -22,7 +22,7 @@ class FinalizePurchaseButton extends StatelessWidget {
         child: Text(
           'Finalize Purchase',
           style: TextStyle(
-            color: Colors.white,
+            color: AppColors.white,
             fontSize: 16.r(context),
             fontWeight: FontWeight.bold,
           ),

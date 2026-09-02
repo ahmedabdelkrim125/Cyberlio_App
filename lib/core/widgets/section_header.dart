@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/helper/responsive_extensions.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class SectionHeader extends StatelessWidget {
   final String title;
@@ -14,7 +15,7 @@ class SectionHeader extends StatelessWidget {
         style: TextStyle(
           fontSize: 18.r(context),
           fontWeight: FontWeight.bold,
-          color: Colors.black,
+          color: AppColors.black,
           fontFamily: 'PPMori',
         ),
       ),

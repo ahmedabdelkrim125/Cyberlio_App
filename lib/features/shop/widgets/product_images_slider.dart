@@ -43,7 +43,7 @@ class _ProductImagesSliderState extends State<ProductImagesSlider> {
                   border: Border.all(
                     color: isSelected
                         ? AppColors.primaryOrange
-                        : Colors.transparent,
+                        : AppColors.transparent,
                     width: 2,
                   ),
                   borderRadius: BorderRadius.circular(15.r(context)),

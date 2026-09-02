@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/constants/app_images.dart';
 import '../../../../core/helper/responsive_extensions.dart';
 import '../../../../core/helper/spacing.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(

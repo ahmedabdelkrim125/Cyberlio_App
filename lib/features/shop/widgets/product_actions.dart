@@ -15,15 +15,15 @@ class ProductActions extends StatelessWidget {
         _buildButton(
           context,
           title: 'Add to cart',
-          color: Colors.black,
-          textColor: Colors.white,
+          color: AppColors.black,
+          textColor: AppColors.white,
         ),
         verticalSpace(context, height: 12),
         _buildButton(
           context,
           title: 'Buy Now',
           color: AppColors.primaryOrange,
-          textColor: Colors.white,
+          textColor: AppColors.white,
           onPressed: () {
             context.pushNamed(Routes.checkoutScreen);
           },

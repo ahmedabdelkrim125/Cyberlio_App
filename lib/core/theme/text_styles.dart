@@ -12,7 +12,7 @@ class TextStyles {
 
   /// Used for TextButton like "SKIP"
   static const TextStyle skipButton = TextStyle(
-    color: Colors.white,
+    color: AppColors.white,
     fontSize: 14,
     fontFamily: 'PPMori',
     fontWeight: FontWeight.w600,

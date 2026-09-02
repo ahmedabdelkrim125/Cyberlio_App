@@ -6,6 +6,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../../../core/helper/responsive_extensions.dart';
 import '../../../../core/helper/spacing.dart';
 import '../../../../core/constants/app_images.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class ShopScreen extends StatelessWidget {
   const ShopScreen({super.key});
@@ -13,21 +14,21 @@ class ShopScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.white,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios, color: Colors.black),
+          icon: const Icon(Icons.arrow_back_ios, color: AppColors.black),
           onPressed: () => Navigator.pop(context),
         ),
         actions: [
           IconButton(
-            icon: SvgPicture.asset(Assets.wishlistIcon, color: Colors.black),
+            icon: SvgPicture.asset(Assets.wishlistIcon, color: AppColors.black),
             onPressed: () {},
           ),
           IconButton(
-            icon: const Icon(Icons.share_outlined, color: Colors.black),
+            icon: const Icon(Icons.share_outlined, color: AppColors.black),
             onPressed: () {},
           ),
         ],

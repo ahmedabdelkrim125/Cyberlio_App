@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/helper/responsive_extensions.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class PaymentCard extends StatelessWidget {
   final List<Color> gradient;
@@ -35,7 +36,7 @@ class PaymentCard extends StatelessWidget {
               const Text(
                 'VISA',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: AppColors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 20,
                 ),
@@ -43,14 +44,14 @@ class PaymentCard extends StatelessWidget {
               Text(
                 '**** **** **** $cardNumber',
                 style: const TextStyle(
-                  color: Colors.white,
+                  color: AppColors.white,
                   fontSize: 16,
                   letterSpacing: 2,
                 ),
               ),
               const Text(
                 '07/25',
-                style: TextStyle(color: Colors.white70, fontSize: 12),
+                style: TextStyle(color: AppColors.white70, fontSize: 12),
               ),
             ],
           ),
@@ -58,7 +59,7 @@ class PaymentCard extends StatelessWidget {
             const Positioned(
               top: 0,
               right: 0,
-              child: Icon(Icons.check_circle, color: Colors.white),
+              child: Icon(Icons.check_circle, color: AppColors.white),
             ),
         ],
       ),

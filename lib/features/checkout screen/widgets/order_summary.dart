@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../../core/helper/responsive_extensions.dart';
 import '../../../../core/helper/spacing.dart';
+import '../../../../core/theme/app_colors.dart';
 
 class OrderSummary extends StatelessWidget {
   const OrderSummary({super.key});
@@ -30,7 +31,7 @@ class OrderSummary extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-            color: Colors.grey,
+            color: AppColors.greyText,
             fontSize: isTotal ? 16.r(context) : 14.r(context),
           ),
         ),

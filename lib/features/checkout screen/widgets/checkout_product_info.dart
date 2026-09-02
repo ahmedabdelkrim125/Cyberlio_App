@@ -15,7 +15,7 @@ class CheckoutProductInfo extends StatelessWidget {
         height: 60.h(context),
         padding: EdgeInsets.all(5.r(context)),
         decoration: BoxDecoration(
-          color: Colors.grey[50],
+          color: AppColors.greyLightest,
           borderRadius: BorderRadius.circular(12.r(context)),
         ),
         child: Image.asset(Assets.head1, fit: BoxFit.contain),
@@ -40,7 +40,7 @@ class CheckoutProductInfo extends StatelessWidget {
           ),
           Text(
             ' | Including taxes and duties',
-            style: TextStyle(fontSize: 11.r(context), color: Colors.grey),
+            style: TextStyle(fontSize: 11.r(context), color: AppColors.greyText),
           ),
         ],
       ),
